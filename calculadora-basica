@@ -1,0 +1,140 @@
+#include <stdio.h>
+
+int main ()
+{
+    int sel = 0;
+    float n1 = 0;
+    float n2 = 0;
+    float Ad = 0;
+    float Sub = 0;
+    float Multi = 0;
+    float Divistot = 0;
+
+   printf ("Calculadora básica:\n\n");
+
+   printf ("Selecione qual operação deseja fazer:\n\n");
+   printf ("1. Adição:\n");
+   printf ("2. Subtração:\n");
+   printf ("3. Multiplicação:\n");
+   printf ("4. Divisão:\n");
+   printf ("5. Todos acima:\n\n");
+
+   scanf("%d", &sel);
+
+   if(sel == 1) {
+
+    printf ("Número 1 \n");
+    scanf ("%f", &n1);
+    printf ("Número 2 \n");
+    scanf ("%f", &n2);
+
+    Ad = n1 + n2;
+
+    printf ("Adição: %.1f\n", Ad);
+
+    return 0;
+   }
+
+   if(sel == 2) {
+
+    printf ("Número 1 \n");
+    scanf ("%f", &n1);
+    printf ("Número 2 \n");
+    scanf ("%f", &n2);
+
+    Sub = n1 - n2;
+
+    printf("Subtração: %.1f\n", Sub);
+
+    return 0;
+   }
+
+   if (sel == 3) {
+
+    printf ("Número 1 \n");
+    scanf ("%f", &n1);
+    printf ("Número 2 \n");
+    scanf ("%f", &n2);
+
+    Multi = n1 * n2;
+
+    printf ("Multiplicação: %.1f\n", Multi);
+    
+    return 0;
+
+   }
+
+   if (sel == 4) {
+
+    printf ("Número 1 \n");
+    scanf ("%f", &n1);
+    printf ("Número 2 \n");
+    scanf ("%f", &n2);
+
+    if (n2 == 0) {
+
+        printf ("Erro: Divisão por zero não é permitida. \n");
+
+    }
+    else {
+        Divistot = n1 / n2;
+
+        printf ("Divisão: %.2f \n ", Divistot);
+
+        
+    }
+    return 0;
+
+   }
+
+    if (sel == 5) {
+
+    printf ("Número 1 \n");
+    scanf ("%f", &n1);
+    printf ("Número 2 \n");
+    scanf ("%f", &n2);
+
+    Ad = n1 + n2;
+
+    printf ("Adição: %.1f\n", Ad);
+
+    Sub = n1 - n2;
+
+    printf("Subtração: %.1f\n", Sub);
+
+    Multi = n1 * n2;
+
+    printf ("Multiplicação: %.1f\n", Multi);
+
+
+    if (n2 == 0) {
+
+        printf ("Erro: Divisão por zero não é permitida. \n");
+
+    }
+    else {
+        Divistot = n1 / n2;
+
+        printf ("Divisão: %.2f \n ", Divistot);
+
+        
+    }
+
+    return 0;
+    }
+    
+    if(sel > 5) {
+
+        printf ("Seleção ínvalida, programa encerrando...");
+
+        return 0;
+    }
+    if (sel < 1) {
+
+     printf ("Seleção ínvalida, programa encerrando...");
+
+    return 0;
+    }
+
+
+}
